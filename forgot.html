@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Forgot</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="/img/logo.png" alt="logo"></div>
+            <li><a href="new.html">Home</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="#home">Services</a></li>
+            <li><a href="index.html">Contact</a></li>
+    
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="min-h-screen  text-slate-900 "><h1 class="transition-all text-center hover:scale-110 bold text-2xl text-black rounded-2xl">Forgot Password</h1>
+        <form class="max-w-sm mx-auto my-8"> 
+        <h6 class="information-text text-black rounded-2xl">Enter your registered email to reset your password.</h6>
+        <label for="Email" class="text-black rounded-2xl"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" class="form-field" name="email" required>
+        <button onclick="showSpinner()" class="submit">Reset Password</button>
+          <h5 class="text-black rounded-2xl">New here? <a href="new.html#radhe" class="text-blue-600">Register</a></h5>
+        <h5 class="text-black rounded-2xl">Already have an account? <a href="new.html#radhe" class="text-blue-600">Login</a></h5>
+       </form>
+</div>
+</body>
+</html>

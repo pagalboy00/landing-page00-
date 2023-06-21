@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <title>Demo Form</title>
+</head>
+<body>
+    <nav class="navbar background">
+    <ul class="nav-list">
+        <div class="logo"><img src="/img/logo.png" alt="logo"></div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#home">About</a></li>
+        <li><a href="#home">Services</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><button class='loginbtn' id="radhe" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;" >Login</button></li>
+
+    </ul>
+    <div class="rightNav">
+        <input type="text" name="search" id="search">
+        <button class="btn-sm">Search</button>
+    </div>
+</nav>
+
+<div class="container" id="login-form">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button"class="toggle-btn" onclick="login()" id="#radhe">Login</button>
+            <button type="button"class="toggle-btn" onclick="register()">Register</button>
+        </div>
+    <form class="login-form" id="login">
+        <input type="text" class="form-field" placeholder="Username" required>
+        <input type="password" class="form-field" placeholder="Password" required>
+        <input type="checkbox" class="checkbox" placeholder="checkbox"><span>Remember Password</span>
+        <button type="submit" class="submit"> Login</button>
+        <a href="forgot.html" class="forgot">Forgot Password ?</a>
+        
+    </form>
+    <form id="register" class="login-form">
+        <input type="text" class="form-field" placeholder="Username" required>
+        <input type="email" class="form-field" placeholder="Email Id" required>
+        <input type="password" class="form-field" placeholder=" Enter Password" required>
+        <input type="checkbox" class="checkbox" placeholder="checkbox"><span>I agree to the terms and conditions</span>
+        <button type="submit" class="submit">Register</button>
+    </form>
+</div>
+</div>
+
+<section class="background firstSection">
+    <div class="box-main">
+        <div class="firsthalf">
+            <p class="text-big">Lorem is great man</p>
+            <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus incidunt error eveniet corrupti ipsum qui neque nisi alias impedit saepe illum delectus nulla aspernatur numquam praesentium amet, necessitatibus excepturi.</p>
+            <div class="button">
+                <button class="btn">Join The Legend </button>
+                <button class="btn">Watch Legend's Video</button>
+            </div>
+        </div>
+
+        <div class="secondHalf">
+            <img src="/img/anime.jpg" alt="backgroung">
+        </div>
+    </div>
+</section>
+
+<section class="secRight">
+    
+</section>
+<script>
+    var x = document.getElementById("login")
+    var y = document.getElementById("register")
+    var z = document.getElementById("btn")
+    function register()
+    {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login()
+    {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+</script>
+</body>
+</html>
